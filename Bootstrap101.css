@@ -1,41 +1,167 @@
-.col-sm-3 {
-  border: 1px #ccc solid;
-  background-color: purple;
-  text-align: center;
-  color: white;
+#contactimage {
+  background: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  background-size: cover;
 }
+
 .col-lg-4 {
   border: 1px #ccc solid;
   background-color: yellow;
   text-align: center;
 
 }
-
+.col-6{
+  margin: auto;
+  background-color: transparent;
+}
 .col-sm-6 {
   border: 1px #ccc solid;
   background-color: gray;
   text-align: center;
 }
-.col-sm-8 {
-  border: 1px #ccc solid;
-  background-color: blue;
-  text-align: center;
-  color: white;
+
+
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-.col-sm-9 {
-  border: 1px #ccc solid;
-  background-color: green;
-  text-align: center;
-  color: white;
+
+
+.column {
+  -ms-flex: 33%; 
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
 }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
 
 .card-img-top {
   border: 2px solid black;
 }
-
+.fancy1 {
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+}
 .fancy1 h1{
   font-family: 'Liu Jian Mao Cao', cursive;
   font-size: 85px;
   text-align: center; 
   background-color: lightseagreen;
+}
+
+.tracking-in-expand-fwd {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+          animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+#contactcontainer {
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.button {
+  background-color: lightseagreen; 
+  border-radius: 5pxS;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: auto;
 }
